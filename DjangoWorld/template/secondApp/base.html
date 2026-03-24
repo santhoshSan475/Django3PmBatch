@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{info.title|default:"my Document" | title}}</title>
+</head>
+<body>
+    {% include 'secondApp/partial/header.html' %}
+    {% block content %}
+    {%  endblock %}
+    {% include 'secondApp/partial/footer.html' %}
+</body>
+</html>

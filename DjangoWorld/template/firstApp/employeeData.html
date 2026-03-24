@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{{employee.title}}</title>
+    <link rel="stylesheet" href="{%  static '/employee.css' %}">
+</head>
+<body>
+    <h1>Employee Information</h1>
+    <p style="color:blue; background-color:lightgray;"> EmployeeName : {{employee.EmpName}}</p>
+    <p> EmpId : {{employee.EmpId}}</p>
+    <p> Designation : {{employee.designation}}</p>
+    <p> Income: {{employee.Income}}</p>
+    <p> Mode: {{employee.Mode}}</p>
+</body>
+</html>

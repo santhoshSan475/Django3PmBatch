@@ -1,0 +1,20 @@
+{% extends 'secondApp/base.html' %}
+{% block content %}
+<main>
+     <div class="detail-card">
+       <img src="https://via.placeholder.com/800x400" alt="Card Image">
+       <div class="detail-content">
+        <h1>Card Title Goes Here</h1>
+        <p class="meta">By John Doe | September 19, 2025</p>
+        <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut dapibus ex, non commodo elit.
+        Morbi viverra lorem eu risus convallis, vel laoreet neque elementum. Sed ut mauris eu justo
+        malesuada congue. Curabitur a dictum arcu. Proin ultrices erat nec ex pretium, non placerat erat
+        elementum. Pellentesque ac augue non nisi feugiat faucibus. Suspendisse potenti. Quisque rutrum
+        blandit malesuada. Duis nec diam vel nulla bibendum scelerisque.
+      </p>
+      <a href="{% url 'homePage' %}" class="back-button">← Back</a>
+     </div>
+     </div>
+</main>
+{% endblock %}

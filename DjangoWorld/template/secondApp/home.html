@@ -1,0 +1,14 @@
+{% extends 'secondApp/base.html' %}
+{% block content %}
+  <main>
+   {% load static %}
+   <div class="card">
+      <img src="{% static 'harris.jfif' %}" alt="Card Image" >
+      <div class="card-content">
+        <h3>{{info.name | upper }}</h3>
+        <p>{{info.description | truncatewords:2}}</p>
+        <a href="{% url 'aboutPage' %}" target="_blank">Read More</a>
+      </div>
+    </div>
+  </main>
+{% endblock %}
